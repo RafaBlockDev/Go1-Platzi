@@ -1,5 +1,7 @@
 package main
 
+// Comienza con fmt
+
 import "fmt"
 
 func main() {
