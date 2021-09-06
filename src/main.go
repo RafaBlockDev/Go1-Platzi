@@ -1,33 +1,21 @@
 package main
 
-// Comienza con fmt
-
 import "fmt"
 
 func main() {
-	// For conditional
+	// ARRAY
+	var array [4]int
+	array[0] = 1
+	array[1] = 2
+	fmt.Println(array, len(array), cap(array))
 
-	for i := 0; i <= 10; i++{
-		// i empieza con 0 y se ejecuta siempre
-		// y cuando sea menor a diez,
-		// incrementando 1
-		fmt.Println(i)
-	}
+	// Slices
+	slice := []int{0, 1, 2, 3, 4, 5, 6}
+	fmt.Println(slice, len(slice), cap(slice))
 
-	fmt.Println("\n") // \n = espaciado
-
-	// For While
-	counter := 0
-	for counter <= 10 {
-		fmt.Println(counter)
-		counter++ // Incremental del 0 => 10
-	}
-
-	// For forever
-	counterForever := 0
-	for {
-		// Se ejecutara por siempre porque no hay condiciones
-		fmt.Println(counterForever)
-		counterForever++
-	}
+	// Métodos en el slice
+	fmt.Println(slice[0])
+	fmt.Println(slice[:3])
+	fmt.Println(slice[2:4])
+	fmt.Println(slice[4:])
 }
